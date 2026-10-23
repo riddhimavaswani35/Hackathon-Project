@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            height:500px;
+            display:flex;
+            align-items:center;
+            justify-content:space-evenly;
+            background-color: blanchedalmond;
+            text-align:center;
+            line-height:100px;
+            color:white;
+
+        }
+        
+        .box{
+            height:100px;
+            width:100px;
+            border:1px solid black;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+
+        }
+        .a1{
+            background-color: red;
+            animation-name: fade;
+        }
+        @keyframes fade{
+
+        
+        0%{
+            optacity:1;
+
+        }
+        50%{
+            optacity:0;
+        }
+        100%{
+            optacity:1;
+
+        }
+    }
+
+    .a5{background-color:white;
+        animation-name: rotate;
+
+        
+    }
+    
+    @keyframes rotate{
+        
+    
+    0%{
+        transform:rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+  @keyframes box-move{
+
+       from {
+        transform : translate(400px,0);
+  }
+  
+  25%{
+  
+    transform:translate(400px,0);
+  }
+   50%{
+    transform: translate(400px,300px);
+   }
+   75%{
+    transform: translate(0px,300px);
+
+   }
+   t0{
+    transform: translate(0,0);
+}
+  }
+
+
+  .ball{
+      height:50px;
+      width: 50px;
+      border:1px solid black;
+      border-radius:50%;
+      animation-name: Google;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+
+     
+  }
+  @keyframes Google {
+    
+        0%{
+            
+        transform: translate(0);
+
+    }
+    25%{
+        transform: translate(0,-30px);
+    }
+    50%{
+        transform:translate(0);
+        
+        
+    }
+    75%{ 
+        
+        transform: translate(0,30px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+  .b1{
+       background-color: red;
+      animation-delay: .2s;
+   }
+   .b2{
+    background-color: yellow; 
+    animation-delay:.4s;
+   }
+   .b3{
+    background-color: green;
+    animation-delay:.4s;
+   }
+
+   .b4{
+    background-color: orange;
+    animation-delay:.6s;
+   } 
+   .b5{
+    background-color: blue;
+    animation-delay: .8s;
+
+  }
+  
+  .right{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+  }
+   
+   
+    .a3{
+        border:10px solid black;
+        border-top:10px solid blue;
+        border-radius:50%;
+        animation-name:rotate;
+    }
+
+     .left, .right{
+            height: 80%;
+            width:40%;
+            border:1px dashed black;
+}
+   .square{
+         height:100px;
+         width:100px;
+         background-color: blue;
+         animation-name: box-move;
+         animation-duration: 3s;
+
+   }
+            
+        
+        
+    </style>
+</head>
+<body>
+    
+</body>
+<div class="con">
+<div class="box a1">fade</div>
+<div class="box a3">rotate</div>
+<div class="box a2">spin</div>
+<div class="box a4">pulse</div>
+<div class="box a5">Fade</div>
+</div>
+<div class="con">
+<div class="left">
+<div class="square"></div>
+</div>
+<div class="right">
+<div class="ball b1"></div>
+<div class="ball b2"></div>
+<div class="ball b3"></div>
+<div class="ball b4"></div>
+<div class="ball b5"></div>
+
+
+
+</div>
+
+</html>

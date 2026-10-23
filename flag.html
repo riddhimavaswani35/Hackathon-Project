@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        min-height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222;
+    }
+    .flag{
+        width:900px;
+        height:600px;
+        overflow:hidden;
+        box-shadow:0 10px 30px#0000;
+        display: flex;
+        flex-direction:column;
+    }
+    .saffron{
+        height:33.33%;
+        background: #ff671f;
+    }
+    .white{
+        height:33.33%;
+        background:#fff;
+        display:flex;
+        justify-content: center;
+    }
+    .green{
+        height:33.33%;
+        background: #046a38;
+    }
+    .chakra{
+        width:190px;
+        height:190px;
+        border:9px solid #000080;
+        border-radius: 50%;
+        position: relative;
+        background: repeating-conic-gradient(
+            from   0deg 2deg, #000080 0deg 2deg,
+            transparent 2deg 15deg
+        );
+        .chakra::before{
+            content:"";
+            position:absolute;
+            width:155px;
+            height:155px;
+            background: white;
+            border-radius: 50%;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%)
+            );
+
+
+        }
+        .chakra::after{
+            content:"";
+            position: relative;
+            width: 155px;
+            height: 155px;
+            border-radius:50%;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background: repeating-conic-gradient(
+                #000080 0deg 1.5deg,
+                transparent 1.5deg  15deg
+            );
+        }
+        .center{
+            width:42px;
+            height: 42px;
+            background: #000080;
+            border-radius:50%;
+            position:absolute;
+            z-index:5;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%)
+            );
+
+        }
+    
+</style>
+    
+</body>
+<div class="flag">
+
+    <div class="saffron"></div>
+    <div class="white"></div>
+    <div class="chakra">
+        <div class="center">
+         </div>
+      </div>
+<div class="green"></div>
+</html>

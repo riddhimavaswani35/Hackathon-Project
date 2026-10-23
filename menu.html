@@ -1,0 +1,289 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizen Coffee House Delhi- Menu</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:white;
+            color:#3e2723;
+            margin: 0;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 10px;
+            background-color:#3e2723;
+            color:white;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0;
+            font-style: italic;
+            color: #dfd0c0;
+        }
+
+        .menu-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .category-title {
+            color: #5d4037;
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #d7ccc8;
+            padding-bottom: 5px;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        th {
+            background-color: #5d4037;
+            color: #ffffff;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #f0e6df;
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #faf5f0;
+        }
+
+        
+        .product-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #d7ccc8;
+            display: block;
+        }
+
+        .item-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #3e2723;
+            margin-bottom: 4px;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            color: #757575;
+        }
+
+        .item-price {
+            font-weight: bold;
+            color: #e65100;
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+
+        
+        @media (max-width: 600px) {
+            th:nth-child(2), td:nth-child(2) {
+                display: none; 
+            }
+            .product-img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+
+
+
+    
+    <h2 class="category-title">1. Coffee Specialties</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%;">Photo</th>
+                <th>Item & Description</th>
+                <th style="width: 15%; text-align: right;">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="Classic Espresso.png" alt="Classic Espresso" class="product-img"></td>
+                <td>
+                    <div class="item-name">Classic Espresso</div>
+                    <div class="item-desc">Rich, full-bodied concentrated shot of premium coffee.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹120</td>
+            </tr>
+            <tr>
+                <td><img src="Kaizen Cappuccino.png" alt="Cappuccino" class="product-img"></td>
+                <td>
+                    <div class="item-name">Kaizen Cappuccino</div>
+                    <div class="item-desc">Balanced espresso with equal parts steamed milk and dense foam.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹160</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <h2 class="category-title">2. Cold Coffee & Shakes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%;">Photo</th>
+                <th>Item & Description</th>
+                <th style="width: 15%; text-align: right;">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="Classic cold coffee.png" alt="Classic Cold Coffee" class="product-img"></td>
+                <td>
+                    <div class="item-name">Classic Cold Coffee</div>
+                    <div class="item-desc">Creamy, blended iced delight to beat the Ajmer heat.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹180</td>
+            </tr>
+            <tr>
+                <td><img src="Gourmet choclate shake.png" alt="Chocolate Shake" class="product-img"></td>
+                <td>
+                    <div class="item-name">Gourmet Chocolate Shake</div>
+                    <div class="item-desc">Thick, rich milk chocolate shake topped with shaved curls.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹195</td>
+            </thread>
+        </tbody>
+    </table>
+
+    
+    <h2 class="category-title">3. Starters & Appetizers</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%;">Photo</th>
+                <th>Item & Description</th>
+                <th style="width: 15%; text-align: right;">Price</th>
+            </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <td><img src="Jalapeño Cheese Corn Arancini .png" alt="Cheese Arancini" class="product-img"></td>
+                <td>
+                    <div class="item-name">Jalapeño Cheese Corn Arancini</div>
+                    <div class="item-desc">Crispy golden fried rice balls stuffed with gooey cheese and hot jalapeños.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹240</td>
+            </tr>
+            <tr>
+                <td><img src="Peri Peri French Fries.png" alt="Peri Peri Fries" class="product-img"></td>
+                <td>
+                    <div class="item-name">Peri Peri French Fries</div>
+                    <div class="item-desc">Crinkle-cut crispy fries tossed in fiery spicy seasoning.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹140</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <h2 class="category-title">4. Continental Mains</h2>
+    <table>
+        <thread>
+            <tr>
+                <th style="width: 15%;">Photo</th>
+                <th>Item & Description</th>
+                <th style="width: 15%; text-align: right;">Price</th>
+            </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <td><img src="Spaghetti Aglio Olio.png" alt="Aglio Olio" class="product-img"></td>
+                <td>
+                    <div class="item-name">Spaghetti Aglio Olio</div>
+                    <div class="item-desc">Classic pasta tossed in rich olive oil, garlic, and dried chili flakes.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹290</td>
+            </tr>
+            <tr>
+                <td><img src="Mr. Beans Taco .png" alt="Mr Beans Taco" class="product-img"></td>
+                <td>
+                    <div class="item-name">Mr. Beans Taco</div>
+                    <div class="item-desc">Crispy tortilla shells loaded with Mexican beans, fresh salsa, and sour cream.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹220</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <h2 class="category-title">5. Chinese Corner</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 15%;">Photo</th>
+                <th>Item & Description</th>
+                <th style="width: 15%; text-align: right;">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="Veg Hakka Noodles.png" alt="Hakka Noodles" class="product-img"></td>
+                <td>
+                    <div class="item-name">Veg Hakka Noodles</div>
+                    <div class="item-desc">Wok-tossed noodles with crunchy colorful veggies and savory soy.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹210</td>
+            </tr>
+            <tr>
+                <td><img src="Veg Manchurian Dry.png" alt="Chilli Manchurian" class="product-img"></td>
+                <td>
+                    <div class="item-name">Veg Manchurian Dry</div>
+                    <div class="item-desc">Deep-fried vegetable dumplings coated in a tangy, spicy semi-dry gravy.</div>
+                </td>
+                <td class="item-price" style="text-align: right;">₹230</td>
+            </thread>
+        </tbody>
+    </table>
+   <footer style="background-color: #3d2a25; color: #ffffff; text-align: center; padding: 30px 20px; border-radius: 8px; margin-top: 60px; font-family: sans-serif;">
+    <h2 style="margin: 0 0 10px 0; color: #ffffff; font-size: 28px; letter-spacing: 2px;">KAIZEN COFFEE HOUSE</h2>
+    <p style="margin: 0; color: #d4a373; font-size: 16px; font-style: italic;">
+        Anasagar link Road Ajmer | Fresh Brews & Delicious Bites
+    </p>
+</footer> 
+    
+    
+
