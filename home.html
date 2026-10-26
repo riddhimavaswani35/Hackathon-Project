@@ -1,6 +1,10 @@
-<title>Kaizen Coffee House - Ajmer</title>
-    <style>
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizen Coffee House - Ajmer</title>
+    <style> 
         * {
             margin: 0;
             padding: 0;
@@ -19,6 +23,9 @@
             color: var(--text-dark);
             line-height: 1.6;
         }
+        
+        
+        
 
         
         header {
@@ -60,7 +67,7 @@
 
     
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://unsplash.com') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
             height: 60vh;
             display: flex;
             flex-direction: column;
@@ -90,7 +97,8 @@
             font-weight: bold;
             text-transform: uppercase;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s, background-color 0.3s;
+            transition: transform 0.2s;
+            background-color: 0.3s;
         }
         .cta-btn:hover {
             background-color: #ff6b84;
@@ -149,6 +157,16 @@
             padding: 0 15px;
             font-size: 15px;
         }
+       
+       .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+            
 
         
         .info-box {
@@ -178,7 +196,7 @@
 
         
     
-</footer>
+
         footer p {
             margin-bottom: 5px;
         }
@@ -188,7 +206,7 @@
         }
 
         
-        @media (max-width: 768px) {
+        @mediascreen(max-width: 768px) {
             .navbar {
                 flex-direction: column;
                 gap: 15px;
@@ -217,7 +235,7 @@
         </nav>
     </header>
 
-    <!-- Hero Showcase Section -->
+    
     <section class="hero" id="home">
         <h1>Brewed with Balance 💖</h1>
         <p>Experience the ultimate coffee journey in Ajmer. Aesthetic pink interiors, specialty handcrafted coffee, and fresh artisanal bites.</p>
@@ -230,17 +248,17 @@
         <h2 class="section-title" id="menu">Our Signatures</h2>
         <div class="grid">
             <div class="card">
-                <img src="Classic cold coffee.png" alt="Classic Cold Coffee">
+                <img src="Classic cold coffee.png" alt=" Cold Coffee">
                 <h3>Classic Cold Coffee</h3>
                 <p>Perfectly balanced, signature house blend served chilled over ice.</p>
             </div>
             <div class="card">
-                <img src="Classic Espresso.png" alt="Specialty Espresso">
+                <img src="Classic Espresso.png" alt="speciality Espresso">
                 <h3>Espresso & Aeropress</h3>
                 <p>Rich, bold artisanal coffee brewed freshly in-house.</p>
             </div>
             <div class="card">
-                <img src="baklava ice cream.png" alt="Baklava with Ice Cream">
+                <img src="baklava- ice -cream.png" alt="Baklava with Ice Cream">
                 <h3>Baklava with Ice Cream</h3>
                 <p>Crispy, golden-layered rich sweet pastry paired with smooth vanilla.</p>
             </div>
@@ -268,10 +286,7 @@
             </ul>
         </div>
 
-    </main>
-
-    
-    <footer>
+        <footer class="footer" id="contact">
         <p>&copy; 2026 Kaizen Coffee House Ajmer. All rights reserved.</p>
         <p>Crafted with love for coffee lovers. Follow us on Instagram.</p>
     </footer>

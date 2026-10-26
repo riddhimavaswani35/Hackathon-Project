@@ -1,90 +1,69 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaizen Coffee Ajmer | Continuous Improvement in Every Cup</title>
+    <title>Our Story & Menu | Kaizen Coffee House Ajmer</title>
     <style>
-        
+        :root {
+            --primary-pink: #ff85a2;
+            --dark-pink: #f45b7e;
+            --soft-cream: #fff5f7;
+            --charcoal: #2b2b2b;
+            --white: #ffffff;
+        }
+
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-:root {
-            --primary-color: #3d2b1f; 
-            --accent-color: #c49a6c;  
-            --bg-light: #fdfaf7;      
-            --text-dark: #2b221a;     
-            --text-light: #6e6156;   
-        }
-        
 
         body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
+            background-color: var(--soft-cream);
+            color: var(--charcoal);
             line-height: 1.6;
         }
 
-        
         header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1.5rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, var(--primary-pink), var(--dark-pink));
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
         }
 
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
             letter-spacing: 2px;
-            color: var(--accent-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
         }
 
-        .logo span {
-            color: white;
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.9;
         }
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: #f5f5f5;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-        }
-
-        
-        section {
-            padding: 5rem 2rem;
-            max-width: 1200px;
+        .container {
+            max-width: 1100px;
             margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 3rem;
+            font-size: 2.2rem;
+            color: var(--dark-pink);
+            margin-bottom: 2rem;
             position: relative;
         }
 
@@ -93,249 +72,206 @@
             display: block;
             width: 60px;
             height: 3px;
-            background-color: var(--accent-color);
+            background-color: var(--primary-pink);
             margin: 0.5rem auto 0;
+            border-radius: 2px;
         }
 
-        
-        .story-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .story-text {
-            flex: 1 1 500px;
-        }
-
-        .story-text p {
-            margin-bottom: 1.5rem;
-            color: var(--text-light);
-            font-size: 1.1rem;
-            text-align: justify;
-        }
-
-        .story-image-box {
-            flex: 1 1 400px;
-            position: relative;
+        .story-box {
+            background-color: var(--white);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(255, 133, 162, 0.1);
             text-align: center;
+            border-left: 5px solid var(--dark-pink);
         }
 
-        
-        .story-img-placeholder {
-            width: 100%;
-            max-width: 500px;
-            height: 350px;
-            background: linear-gradient(135deg, #4a3525, #241911);
-            border-radius: 12px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: var(--accent-color);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        .story-box p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
         }
 
-        .story-img-placeholder h3 {
-            color: white;
-            margin-bottom: 0.5rem;
+        .highlight-phrase {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--dark-pink);
+            margin: 1.5rem 0;
+            display: block;
         }
 
-        
-        .product-grid {
+        .menu-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
+            gap: 2rem;
         }
 
-        .product-card {
-            background-color: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid #eee;
+        .category-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(255, 133, 162, 0.08);
+            transition: transform 0.3s ease;
         }
 
-        .product-card:hover {
+        .category-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
 
-        .product-image {
-            height: 220px;
-            background-color: #eee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: var(--primary-color);
+        .category-card h3 {
+            color: var(--dark-pink);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--soft-cream);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
         }
 
-        
-        .espresso-bg { background-color: #eae1da; }
-        .latte-bg { background-color: #f3ece6; }
-        .cold-brew-bg { background-color: #dfd5cb; }
-        .pour-over-bg { background-color: #e6ded6; }
-
-        .product-info {
-            padding: 1.5rem;
-        }
-
-        .product-name {
-            font-size: 1.3rem;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .product-desc {
-            color: var(--text-light);
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-            height: 4.5 lines; /* Conceptually bound */
-        }
-
-        .product-meta {
+        .menu-item {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid #f0f0f0;
-            padding-top: 1rem;
+            align-items: baseline;
+            margin-bottom: 1rem;
         }
 
-        .product-price {
-            font-size: 1.25rem;
+        .item-name {
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+
+        .item-price {
             font-weight: bold;
-            color: var(--primary-color);
+            color: var(--dark-pink);
+            margin-left: 10px;
         }
 
-        .order-btn {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 0.5rem 1.2rem;
-            border: none;
-            border-radius: 6px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.2s;
+        .item-desc {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 1rem;
+            display: block;
         }
 
-        .order-btn:hover {
-            background-color: var(--accent-color);
-        }
-
-    
         footer {
-            background-color: var(--primary-color);
-            color: #d1c7bd;
+            background-color: var(--charcoal);
+            color: var(--white);
             text-align: center;
             padding: 2rem;
             margin-top: 4rem;
-            border-top: 4px solid var(--accent-color);
+            font-size: 0.9rem;
         }
 
-        footer p {
-            font-size: 0.95rem;
+        footer p a {
+            color: var(--primary-pink);
+            text-decoration: none;
         }
-
         
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            section {
-                padding: 3rem 1.5rem;
-            }
-            .section-title {
-                font-size: 2rem;
-            }
+        footer p a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1280px) {
+            header h1 { font-size: 2.2rem; }
+            .story-box { padding: 1.5rem; }
         }
     </style>
 </head>
 <body>
 
-    
     <header>
-        <div class="nav-container">
-            <div class="logo">KAIZEN<span>COFFEE</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#story">Our Story</a></li>
-                    <li><a href="#products">Products</a></li>
-                    
-                </ul>
-            </nav>
-        </div>
+        <h1>Kaizen Coffee House</h1>
+        <p>chasing the perfect cup</p>
     </header>
 
-    
-    <section id="story">
-        <h2 class="section-title">Our Story</h2>
-        <div class="story-container">
-            <div class="story-text">
-                <p>Derived from the Japanese philosophy of <strong>"Kaizen"</strong>—meaning continuous, never-ending improvement—we brought this dedication to the historic heart of <strong>Ajmer</strong>.</p>
-                <p>Our journey began with a simple belief: that brewing coffee is an evolving art form. We don’t just source high-altitude single-origin beans; we obsessively refine the roasting temperatures, grinding precision, and extraction techniques to ensure that every cup served surpasses the last.</p>
-                <p>Nestled away from the city's frantic rush, Kaizen Coffee Ajmer provides an intentional, peaceful space. It is a sanctuary designed for community conversations, contemplative mornings, and the shared appreciation of exceptional specialty coffee.</p>
+    <div class="container">
+        <!-- Our Story Section -->
+        <section id="our-story">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-box">
+                <p>Welcome to <strong>Kaizen Coffee House</strong>, Ajmer’s ultimate destination for rich flavors, stunning aesthetics, and continuous improvement. Named after the Japanese philosophy of 'Kaizen' (change for the better), we strive to elevate your everyday coffee routines into memorable sensory experiences.</p>
+                
+                <p>Nestled beautifully near the scenic Ana Sagar Lake and expanding our vibrant energy into Vaishali Nagar, we recently reimagined our space into a cheerful, high-energy Barbiecore-inspired paradise. Complete with floral ceiling treatments, whimsical balloon accents, and glowing neon art, our environment is meticulously curated to be the perfect backdrop for romantic dates, intense study sessions, or lively weekend meetups.</p>
+                
+                <span class="highlight-phrase">“Brewed with Balance”</span>
+                
+                <p>For us, balance isn’t just a catchy phrase—it’s the soul of our kitchen. It defines the precision of our slow-dripped brews, the delicate crunch of our signature fusion desserts, and the perfect harmony of local comfort paired with international culinary trends.</p>
             </div>
-                    <img src="our story.png",height:60%,width:50%;>
-                    </div>            
-        </div>
-    </section>
+        </section>
 
-    
-    <section id="products">
-        <h2 class="section-title">Our Products</h2>
-        <div class="product-grid">
-
-            
-            <div class="product-card">
-                <div class="product-image espresso-bg">☕</div>
-                <div class="product-info">
-                    <h3 class="product-name">Kaizen Signature Espresso</h3>
-                    <p class="product-desc">Our core blend featuring deep notes of rich dark chocolate, roasted almonds, and a bright citrus finish.</p>
-                    <div class="product-meta">
-                        <span class="product-price">₹180</span>
-                        </div>
-                </div>
-            </div>
-
-            
-            <div class="product-card">
-                <div class="product-image latte-bg">🥛</div>
-                <div class="product-info">
-                    <h3 class="product-name">Classic Spanish Latte</h3>
-                    <p class="product-desc">Perfectly balanced espresso combined with smooth textured milk and a subtle hint of condensed sweetness.</p>
-                    <div class="product-meta">
-                        <span class="product-price">₹220</span>
-                        </div>
-
+        <!-- Products / Menu Section -->
+        <section id="products">
+            <h2 class="section-title">Our Signature Creations</h2>
+            <div class="menu-grid">
+                
+                <!-- Category: Coffee & Frappes -->
+                <div class="category-card">
+                    <h3>Crafted Coffee & Frappes</h3>
+                    
+                    <div class="menu-item">
+                        <span class="item-name">Classic Cold Coffee</span>
+                        <span class="item-price">₹279</span>
                     </div>
+                    <span class="item-desc">Our timeless, smooth, and richly blended classic iced delight.</span>
+
+                    <div class="menu-item">
+                        <span class="item-name">Hazelnut Frappe</span>
+                        <span class="item-price">₹335</span>
+                    </div>
+                    <span class="item-desc">Creamy ice-blended espresso infused with premium toasted hazelnut syrup.</span>
+
+                    <div class="menu-item">
+                        <span class="item-name">Tiramisu Frappe</span>
+                        <span class="item-price">₹335</span>
+                    </div>
+                    <span class="item-desc">A liquid dessert featuring traditional Italian espresso and mascarpone notes.</span>
+
+                    <div class="menu-item">
+                        <span class="item-name">Double Choco Chip Frappe</span>
+                        <span class="item-price">₹349</span>
+                    </div>
+                    <span class="item-desc">Decadent chocolate drizzle, crunchy chocolate chips, and premium coffee.</span>
                 </div>
 
-            <div class="product-card">
-                <div class="product-image latte-bg">🍜</div>
-                <div class="product-info">
-                    <h3 class="product-name">Veg Hakka Noodles</h3>
-                    <p class="product-desc">Wok-tossed noodles with crunchy colorful veggies and savory soy.</p>
-                    <div class="product-meta">
-                        <span class="product-price">₹210</span>
-                        </div>
-                     </div>
-                  </div>      
+                <!-- Category: Signature Eats & Fusion -->
+                <div class="category-card">
+                    <h3>Signature Eats & Fusion</h3>
+                    
+                    <div class="menu-item">
+                        <span class="item-name">Kaizen Grills</span>
+                        <span class="item-price">₹380</span>
+                    </div>
+                    <span class="item-desc">Perfectly spiced flame-grilled chicken served alongside aromatic Basmati rice.</span>
 
-                <div class="product-card">
-                <div class="product-image latte-bg">🌮</div>
-                <div class="product-info">
-                    <h3 class="product-name">Mr. Beans Taco</h3>
-                    <p class="product-desc">A spiced,savory bean filling tucked into soft corn or crispy tortilla shells,topped with fresh salsa vegetables and cheese 
-</p>
-                    <div class="product-meta">
-                        <span class="product-price">₹220</span>
-                        </div>
-                     </div>
-                   </div>     
+                    <div class="menu-item">
+                        <span class="item-name">Jalapeño Cheese Corn Arancini</span>
+                        <span class="item-price">₹260</span>
+                    </div>
+                    <span class="item-desc">Crispy Italian rice balls stuffed with gooey cheese, corn, and spicy jalapeños.</span>
 
-                        .
+                    <div class="menu-item">
+                        <span class="item-name">Mr. Bean's Tacos</span>
+                        <span class="item-price">₹240</span>
+                    </div>
+                    <span class="item-desc">Crunchy corn shells packed with zesty beans, fresh salsa, and dynamic sauces.</span>
+
+                    <div class="menu-item">
+                        <span class="item-name">Aglio Olio Pasta</span>
+                        <span class="item-price">₹290</span>
+                    </div>
+                    <span class="item-desc">Spaghetti tossed gently in premium olive oil, minced garlic, and red pepper flakes.</span>
+                </div>
+
+                <!-- Category: Desserts -->
+                <div class="category-card">
+                    <h3>Sweet Endings</h3>
+                    
+                    <div class="menu-item">
+                        <span class="item-name">Baklava with Ice Cream</span>
+                        <span class="item-price">₹220</span>
+                    </div>
+                    <span class="item-desc">A crowd-favorite pairing rich, flaky, multi-layered pastry with smooth vanilla ice cream.</span>
+
+                    <div class="menu-item">
+                        <span class="item-name">KitKat Brownie</span>
+                        <span class="item-price">₹180</span>
+                    </div>
 
